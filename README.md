@@ -1,50 +1,138 @@
-# Welcome to your Expo app 👋
+# 🌱 FIAP Farms Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
+  <img src="./assets/images/icon.png" alt="FIAP Farms Logo" width="120" height="120">
+  
+  **Aplicativo móvel para gestão inteligente de fazendas**
+  
+  [![Expo](https://img.shields.io/badge/Expo-000000?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+  [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+</div>
 
-## Get started
+## 📱 Sobre o Projeto
 
-1. Install dependencies
+O **FIAP Farms Mobile** é uma aplicação móvel desenvolvida para revolucionar a gestão agrícola, oferecendo uma solução completa e intuitiva para produtores rurais. O aplicativo permite monitoramento em tempo real, análise de dados e tomada de decisões baseada em insights inteligentes.
 
-   ```bash
-   npm install
-   ```
+### 🎯 Principais Funcionalidades
 
-2. Start the app
+- **📊 Dashboard Inteligente**: Visão geral completa da fazenda com métricas em tempo real
+- **💰 Gestão de Vendas**: Acompanhamento de vendas, receitas e análise de performance
+- **🌿 Controle de Produção**: Monitoramento de culturas, produtividade e recursos
+- **📦 Gestão de Estoque**: Controle de inventário e vendas integradas
+- **🎯 Sistema de Metas**: Definição e acompanhamento de objetivos de produção
+- **🔐 Autenticação Segura**: Login integrado com Firebase Authentication
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tecnologias Utilizadas
 
-In the output, you'll find options to open the app in a
+- **Framework**: [Expo](https://expo.dev/) + [React Native](https://reactnative.dev/)
+- **Linguagem**: [TypeScript](https://www.typescriptlang.org/)
+- **Navegação**: [Expo Router](https://docs.expo.dev/router/introduction/)
+- **Backend**: [Firebase](https://firebase.google.com/) (Auth)
+- **Gráficos**: [React Native Chart Kit](https://github.com/indiespirit/react-native-chart-kit)
+- **Estado**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **Ícones**: [Expo Vector Icons](https://docs.expo.dev/guides/icons/)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📋 Pré-requisitos
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Antes de começar, certifique-se de ter instalado:
 
-## Get a fresh project
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [Expo Go](https://expo.dev/go) (para testar no dispositivo físico)
 
-When you're ready, run:
+## 🚀 Instalação e Configuração
+
+### 1. Clone o repositório
 
 ```bash
-npm run reset-project
+git clone https://github.com/DeboraLara1/Fiap-farms-mobile.git
+cd fiap-farms-mobile
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Instale as dependências
 
-## Learn more
+```bash
+npm install
+# ou
+yarn install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Execute o projeto
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm start
+# ou
+yarn start
+```
 
-## Join the community
+## 📱 Como Executar
 
-Join our community of developers creating universal apps.
+### Desenvolvimento Local
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+# Iniciar o servidor de desenvolvimento
+npm start
+### Emulador
+
+- **Android**: Abra o Android Studio e inicie um emulador
+
+## 🏗️ Estrutura do Projeto
+
+
+fiap-farms-mobile/
+├── app/                    # Páginas e navegação (Expo Router)
+│   ├── (tabs)/            # Abas principais do app
+│   │   ├── dashboard.tsx  # Dashboard principal
+│   │   ├── sales-dashboard.tsx
+│   │   ├── production-dashboard.tsx
+│   │   ├── inventory-sales.tsx
+│   │   └── goals.tsx
+│   ├── login.tsx          # Tela de login
+│   └── _layout.tsx        # Layout principal
+├── components/            # Componentes reutilizáveis
+│   ├── AuthContext.tsx   # Contexto de autenticação
+│   ├── HapticTab.tsx     # Componente de tab com feedback
+│   └── ui/               # Componentes de interface
+├── constants/            # Constantes e configurações
+│   ├── Colors.ts         # Paleta de cores
+│   └── firebaseConfig.ts # Configuração do Firebase
+├── hooks/                # Hooks customizados
+└── assets/              # Imagens e recursos
+```
+
+## 🎨 Funcionalidades Detalhadas
+
+### 📊 Dashboard Principal
+- Visão geral da fazenda
+- Métricas de produção
+- Alertas e notificações
+- Gráficos de performance
+
+### 💰 Gestão de Vendas
+- Acompanhamento de vendas
+- Análise de receitas
+- Relatórios de performance
+- Projeções financeiras
+
+### 🌿 Controle de Produção
+- Monitoramento de culturas
+- Controle de recursos
+- Análise de produtividade
+- Gestão de safras
+
+### 📦 Estoque e Vendas
+- Controle de inventário
+- Gestão de produtos
+- Integração vendas-estoque
+- Alertas de estoque baixo
+
+### 🎯 Sistema de Metas
+- Definição de objetivos
+- Acompanhamento de progresso
+- Notificações de metas
+- Relatórios de performance
+
+
